@@ -1,0 +1,25 @@
+package com.lzy.spring;
+
+import com.lzy.spring.framework.v1.servlet.LZYDispatchServlet;
+
+import java.net.URL;
+
+/**
+ * @ Author     ：lzy
+ * @ Date       ：Created in  2020/7/30 23:46
+ * @ Description：
+ */
+public class Test {
+//    public static void main(String[] args) {
+//        char a='A';
+//        a+=32;
+//        System.out.println(a);
+//
+//
+//    }
+public static void main(String[] args) {
+    LZYDispatchServlet lzyDispatchServlet = new LZYDispatchServlet();
+    URL rr=lzyDispatchServlet.getClass().getClassLoader().getResource("com/lzy/spring/demo/service");
+    System.out.println(rr);
+}
+}
